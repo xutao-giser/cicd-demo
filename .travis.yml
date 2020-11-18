@@ -4,15 +4,9 @@ node_js:
 branchs:
   only:
   - main
-addons:
-  apt:
-    packages:
-    - sshpass
 install:
   "npm install"
 script:
   - "npm run build"
-# after_success:
-#   - ./script/deploy.sh
 
 
