@@ -2,6 +2,7 @@ language: node_js
 node_js:
   - 12
 branchs:
+  only:
   - main
 addons:
   apt:
@@ -11,7 +12,7 @@ install:
   "npm install"
 script:
   - "npm run build"
-after_success:
-  - ./script/deploy.sh
+# after_success:
+#   - ./script/deploy.sh
 
 
